@@ -15,7 +15,7 @@ public class FactorRequest {
                 client = new RequestGET();
                 break;
             case "delete":
-                client = new RequestDELETE();
+                client = new RequestDelete();
                 break;
             default:
                 client = new RequestGET();
