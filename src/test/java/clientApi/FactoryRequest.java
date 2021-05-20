@@ -1,12 +1,12 @@
-package clienteapi;
+package clientApi;
 
-public class FactorRequest {
+public class FactoryRequest {
 
-    public static RequestClient make(String type) {
+    public static RequestClient make (String type){
         RequestClient client;
-        switch (type) {
+        switch (type){
             case "put":
-                client = new RequestPut();
+                client = new RequestPUT();
                 break;
             case "post":
                 client = new RequestPOST();
@@ -15,7 +15,7 @@ public class FactorRequest {
                 client = new RequestGET();
                 break;
             case "delete":
-                client = new RequestDelete();
+                client = new RequestDELETE();
                 break;
             default:
                 client = new RequestGET();
